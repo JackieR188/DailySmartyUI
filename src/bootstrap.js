@@ -19,8 +19,8 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>
-          <Route path='/' component={Home}/>
-          <Route path='/results' componet={Home}/>
+          <Route path='/' exact component={Home}/>
+          <Route path='/results' componet={Results}/>
         </Switch>
       </BrowserRouter>
     </Provider>
