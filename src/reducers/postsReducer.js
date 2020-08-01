@@ -20,7 +20,7 @@ export default function(state = INIT_STATE, action) {
                 const resultsPosts = action.payload;
                 return {
                     ...state, 
-                    posts: resultsPosts
+                    resultsPosts
                 }
         default:
             return state;
